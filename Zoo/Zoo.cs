@@ -11,11 +11,15 @@ public class Zoo
     {
         _animals.Add(animal);
     }
+    int _soundCount = 1;
     public void ShowAll()
     {
         foreach (var animal in _animals)
         {
             animal.MakeSound();
+            Console.WriteLine(_soundCount);
+            _soundCount++;
+            
         }
     }
 }
