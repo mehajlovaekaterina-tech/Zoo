@@ -1,8 +1,8 @@
 ﻿public class Bird : Animal
 {
-    public Bird(string name, int age) : base(name, age) { }
+    public Bird(string name, int age, string favfood) : base(name, age, favfood) { }
     public override void MakeSound()
     {
-        Console.WriteLine($"{Name} чирикает");
+        Console.WriteLine($"{Name} чирикает, его любимая еда это {Favfood}");
     }
 }
